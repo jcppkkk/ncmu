@@ -1,0 +1,49 @@
+/* Memory Analyzer CSS Styles */
+
+DataTable {
+    width: 1fr;
+    height: 1fr;
+}
+
+Vertical {
+    height: 100%;
+    width: 100%;
+}
+
+#process_table {
+    width: 100%;
+    height: 1fr;
+    /* Take up remaining space */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+#process_table .datatable--header {
+    background: #504945;
+    /* Gruvbox dark bg2 */
+    color: #fbf1c7;
+    /* Gruvbox light fg0 */
+}
+
+#process_table .datatable--cursor {
+    background: #665c54;
+    /* Gruvbox dark bg3 */
+}
+
+#info_bar {
+    width: 100%;
+    height: auto;
+    /* Allow height to expand based on content */
+    max-height: 5;
+    /* Limit to 5 lines */
+    background: #504945;
+    /* Gruvbox dark bg2 */
+    color: #fbf1c7;
+    /* Gruvbox light fg0 */
+    padding: 0 1;
+    dock: bottom;
+    /* ignore */
+    /* Fix the info bar to the bottom */
+    text-wrap: wrap;
+    /* Enable word wrapping */
+}

@@ -1,0 +1,14 @@
+[project]
+name = "ncmu"
+version = "0.1.0"
+description = "NCurses Memory Usage - A TUI memory analyzer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["psutil>=7.0.0", "textual>=2.1.2"]
+
+[project.scripts]
+ncmu = "ncmu.memory_analyzer:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
